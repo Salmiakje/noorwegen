@@ -14,6 +14,28 @@
                 max-width: 540px;
             }
         }
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .content {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .main {
+            flex: 1;
+        }
+        footer {
+            width: 100%;
+            background-color: #3366FF;
+            text-align: center;
+            color: PaleGoldenrod;
+            padding: 5px;
+            position: fixed;
+            bottom: 0;
+            height: 200px;
+        }
     </style>
 </head>
 <body>
@@ -25,26 +47,31 @@
             <a href="contact.html" class="text-white">Contact</a>
         </nav>
     </header>
-    <div class="container mt-4">
-        <h2>Contact</h2>
-        <form>
-            <div class="form-group">
-                <label for="name">Naam</label>
-                <input type="text" class="form-control" id="name" placeholder="Voer je naam in">
-            </div>
-            <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" class="form-control" id="email" placeholder="Voer je e-mail in">
-            </div>
-            <div class="form-group">
-                <label for="message">Bericht</label>
-                <textarea class="form-control" id="message" rows="3" placeholder="Voer je bericht in"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Verzenden</button>
-        </form>
+    <div class="content">
+        <div class="container main mt-4">
+            <h2>Contact</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Naam</label>
+                    <input type="text" class="form-control" id="name" placeholder="Voer je naam in">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Voer je e-mail in">
+                </div>
+                <div class="form-group">
+                    <label for="message">Bericht</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Voer je bericht in"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Verzenden</button>
+            </form>
+        </div>
+        <footer class="bg-dark text-white text-center p-3">
+            <p>Ⓒ Gemaakt door: Katja Matser</p>
+        </footer>
     </div>
-    <footer class="bg-dark text-white text-center p-3 mt-4" style="height: 200px;">
-        <p>Ⓒ Gemaakt door: Katja Matser</p>
+</body>
+</html>
     </footer>
 </body>
 </html>
