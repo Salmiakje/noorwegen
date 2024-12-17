@@ -27,7 +27,7 @@ footer {
     background-color: #343a40;
     color: white;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     footer {
         position: fixed;
         bottom: 0;
