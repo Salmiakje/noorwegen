@@ -25,7 +25,7 @@ footer {
     padding: 5px;
     height: 200px;
 }
-@media (min-width: 767px) {
+@media (min-width: 992px) {
     footer {
         position: fixed;
         bottom: 0;
